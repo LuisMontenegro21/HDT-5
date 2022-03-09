@@ -12,9 +12,9 @@ def new (self, env):
         return parameters
     
 def ready():
-    new()
-    parameter = [new.mem, new.instr, new.name]
-        
+    parameter = new()
+    ptr = iter (parameter)
+            
 
 env =  simpy.Environment()
 dres = simpy.Resource(env, capacity = 1)
